@@ -1,9 +1,310 @@
+
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Simona Ilcheva</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>ProjectZero</title>
+  </head>
+  <body>		<!-- Only content inside the body will be displayed -->
+    <h1 id="top">HTML</h1>
+    <br>
+    <h2>Everything I have learned so far</h2>
+    <br>
+    <h3>Headings h1-h6</h3>
+    <h1>h1 Simona Ilcheva</h1>
+    <h2>h2 Simona Ilcheva</h2>
+    <h3>h3 Simona Ilcheva</h3>
+    <h4>h4 Simona Ilcheva</h4>
+    <h5>h5 Simona Ilcheva</h5>
+    <h6>h6 Simona Ilcheva</h6>
+    <br>
+
+    <h3>Text formatting</h3>
+
+    <div>&ltdiv&gt division element - devides pages in sections, grouping elements &lt/div&gt</div>
+    <p>&ltp&gt paragraph - block of plain text &lt/p&gt</p>
+    <p>To separate small pcs of <span>content</span> we use <b>&ltspan&gt</b> element.</p>
+    <p><em>Emphasise text (as italic)</em></p>
+    <p><strong>Highlight text(as bold)</strong></p>
+    <p>This is <sup>superscript</sup> element.</p>
+    <p>This is <sub>subscript</sub> element.</p>
+    <blockquote>
+      <p>This element is used for longer quotes that take up an entire paragraph.</p>
+    </blockquote>
+    <p><q>This element is used for shorter quotes that sit within a paragraph.</q></p>
+    <p><abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
+    <p><acronym title="National Aeronautics and Space Administration">NASA</acronym> do some crazy space stuff.</p>
+    <p>When you are referencing a piece of work such as book(<cite>A Brief History of Time</cite>), film of research paper (not for person's name).</p>
+    <p>The first time you explain some new terminology in a document, it is known as the defining instance of it - A <dfn>black hole</dfn> is a region in space from which nothing can escape.</p>
+    <p>It was the <del>worst</del> <ins>best</ins> idea she had ever had. (inserted or deleted content in a document)</p>
+    <p>Laptop computer: <s>Was $995</s> Now only $375. (something that is no longer accurate, but should not be deleted)</p>
+    <br>
+    <address>
+      <p><a href="mailto:sdmileva@gmail.com">sdmileva@gmail.com</a></p>
+      <p>2A Veliko Tyrnovo str., 8200 Pomorie, Bulgaria</p>
+    </address>
+    <hr/>
+    
+    <h4>hCards</h4>
+    <ul class="vcard">
+      <li class="fn">Simona Ilcheva</li>
+      <li class="nickname">Moni</li>
+      <li class="org">Kronospan</li>
+      <li class="tel">+359894467230</li>
+      <li><a class="url" href="https://kronospan-express.com/en_EN/">kronospan-express.com</a></li>
+    </ul>
+    <br>
+    <div class="vcard">
+      <div class="fn org">Wikimedia Foundation Inc.</div>
+      <div class="adr">
+        <div class="street-address">149 New Montgomery Street, 3rd Floor</div>
+        <div><span class="locality">San Francisco</span> <abbr class="region" title="California">CA</abbr> <span class="postal-code">94105</span></div>
+        <div class="counrty-name">USA</div>
+      </div>
+      <div>Phone: <span class="tel">+1-415-839-6885</span></div>
+      <div>Email: <span class="email">info@wikimedia.org</span></div>
+      <div class="tel">
+        <span class="type">Fax</span>:
+        <span class="value">+1-415-882-0495</span>
+      </div>
+    </div>
+
+    <br>
+
+    <h3>Lists</h3>
+
+    <h4>Unordered List - output is bullets:</h4>
+      <ul>
+        <li>limes</li>
+        <li>tomatoes</li>
+        <li>chicken</li>
+      </ul>
+    <br>
+
+    <h4>Ordered List - output is ordered numbers:</h4>
+      <ol>
+        <li>limes</li>
+        <li>tomatoes</li>
+        <li>chicken</li>
+      </ol>
+    <br>
+
+    <h4>Definition List</h4> 
+    <dl>  
+      <dt>Sashimi</dt>
+      <dd>Sliced row fish that is served with condiments.</dd>
+      <dt>Scale</dt>
+      <dd>A device used to accurately measure the weight of ingredients.</dd>
+    </dl>
+    <br>
+
+    <h4>Nested List</h4>
+    <ul>
+      <li>Mousses</li>
+      <li>Pastries
+        <ul>
+          <li>Croissant</li>
+          <li>Mille-feuille</li>
+          <li>Palmier</li>
+          <li>Profiterolie</li>
+        </ul></li>
+      <li>Tarts</li>
+    </ul>
+    <br>
+
+
+    <h3>Links</h3>
+
+    <h4>Linking to other sites</h4>
+    <p> News sites:
+      <ul>
+        <li><a href="https://www.dnevnik.bg">Dnevnik</a></li>
+        <li><a href="https://www.capital.bg">Capital</a></li>
+        <li><a href="https://www.euronews.com">www.euronews.com</a></li>
+      </ul>
+    </p>
+    <br>
+
+    <h4>Linking to other pages on the same site</h4>
+    <p>When you are linking to other pages within the same site, you can use relative URL. If all the pages are in the same folder, then the value of the href attribute is just the name of the file.
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="contact.thml">Contact</a></li>
+        <li><a href="3.mp4">link</a></li>
+      </ul>
+    </p>
+
+    <h4>Email links</h4>
+    <a href="mailto:sdmileva@gmail.com">Email Simona</a>
+    
+    <h4>Opening links in a new window</h4>
+    <a href="https://www.imdb.com" target="_blank">IMDB</a> (opens in a new window)
+    
+    <h4>Linking to a specific part of the same page</h4>
+    <p>Before you you can link to a specific part of a page, you need to identify the points in the page that the link will go. You do this by using <em>id</em> attribute.</p>
+    <a href="#top">Top</a>
+
+    <h4>Linking to a specific part of another page</h4>
+    <p>Similarly as long as the page you are linking to has id attributes.</p>
+    <a href="http:/www.htmlandcssbook.com/#bottom">example</a>
+    <br><br>
+    
+    <h3>Images</h3>
+    <h4>Adding images</h4>
+    <img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" alt="two brothers kissing" title="Two brothers kissing"/>
+    <br>
+
+    <figure>
+      <img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg">
+      <figcaption>This picture, taken Dec 2020, shows Stefi kissing Miko</figcaption>
+    </figure>
+    <br>
+
+    <h4>Height & width of images</h4>	<!-- The size of images is increasingly being specified using CSS rather than HTML -->
+    <img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" alt="two brothers kissing" width="262" height="181"/>
+    <br>
+
+    <h4><em>Old Code</em>: Aligning images horizontally</h4>	<!-- Removed from HTML, should use CSS -->
+    <p><img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" width="262" height="181" align="left"/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <br><br><br><br>
+    <p><img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" width="262" height="181" align="right"/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <br>
+
+    <h4><em>Old Code</em>: Aligning images vertically</h4>
+    <p><img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" width="262" height="181" align="top"/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p><img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" width="262" height="181" align="middle"/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p><img src="images/A294017F-D0C1-42D9-9A71-F36DC545598C_1_105_c.jpeg" width="262" height="181" align="bottom"/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <br>
+
+    <h3>Tables</h3>
+    <h4>Basic table structure</h4>
+    <table>
+      <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>60</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+    </table>
+    <br>
+
+    <h4>Table Headings</h4>
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+      </tr>
+      <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>120</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <th scope="row">Total sales:</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </table>
+    <br>
+  
+    <h4>Spanning columns</h4>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th scope="col">9am</th>
+        <th scope="col">10am</th>
+        <th scope="col">11am</th>
+        <th scope="col">12am</th>
+      </tr>
+      <tr>
+        <th scope="row">Monday</th>
+        <td colspan="2">Geography</td>
+        <td>Math</td>
+        <td>Art</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td colspan="3">Gym</td>
+        <td>Home Ec</td>
+      </tr>
+    </table>
+    <br>
+
+    <h4>Spanning rows</h4>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th scope="col">ABC</th>
+        <th scope="col">BBC</th>
+        <th scope="col">CNN</th>
+      </tr>
+      <tr>
+        <th scope="row">6pm-7pm</th>
+        <td rowspan="2">Movie</td>
+        <td>Comedy</td>
+        <td>News</td>
+      </tr>
+      <tr>
+        <th scope="row">7pm-8pm</th>
+        <td>Sport</td>
+        <td>Current Affairs</td>
+      </tr>
+    </table>
+    <br>
+
+    <h4>Long Tables: thead, tbody & tfoot</h4>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Income</th>
+          <th>Expenditure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1st Jan</th>
+          <td>250</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <th>2nd Jan</th>
+          <td>285</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <th>3rd Jan</th>
+          <td>260</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <th>31st Jan</th>
+          <td>129</td>
+          <td>64</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th></th>
+          <td>7824</td>
+          <td>1241</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+    
+    <a href="forms.html">7. Forms</a>
+
+  </body>
 </html>
