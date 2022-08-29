@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0fbfc;
+    font-family: 'Montserrat', sans-serif;
+    color: #293241;
+}
+
+#navi {
+    background-color: #3d5a80;
+    margin-top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navi li{
+    display: inline-block;
+}
+
+#navi a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 20px;
+    margin: 10px 10px;
+}
+
+a:hover {
+    background-color: #293241;
+    border-radius: 2px;
+}
+
+.main {
+    margin: 2px;
+}
+
+.image {
+    /*padding: 80px 0;*/
+    background-image: url("./Css-versicherung-logo.png");
+    opacity:;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+#banner {
+    position: relative;
+    top: 100px;
+}
+
+#banner h1{
+    font-size: 60px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+}
+
+#banner p {
+    font-size: 36px;
+    font-family: 'Edu SA Beginner', cursive;
+
+}
+
+h1, h2 {
+    margin: 20px 0 5px 0;
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid #293241;
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bolder;
+    background-color: #98c1d9;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+thead tr {
+    height: 30px;
+}
+
+thead td {
+    padding: 5px;
+}
+
+td {
+    padding: 2px;
+}
+
+.syntax {
+    color: #ee6c4d;
+    font-style: italic;
+}
+
+#footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #3d5a80;
+    color: white;
+    text-align: right;
+    font-weight: 200;
+    font-style: italic;
+    padding-top: 5px;
+    margin-top: 10px;
+}
