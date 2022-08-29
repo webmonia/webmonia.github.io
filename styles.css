@@ -19,6 +19,7 @@ body {
     text-align: center;
     position: sticky;
     top: 0px;
+
 }
 
 #navi li{
@@ -111,11 +112,15 @@ td {
 #footer {
     position: sticky;
     bottom: 0;
-    background-color: #3d5a80;
+    /*background-color: #3d5a80;*/
+    background-image: linear-gradient(to right, #e0fbfc, #3d5a80);
     color: white;
     text-align: right;
     font-weight: 200;
     font-style: italic;
-    padding-top: 5px;
-    margin-top: 10px;
+    padding: 5px 10px 5px 5px;
+    margin: 10px 0;
+    width: 100%;
+    float: right;
+    opacity: 0.8;
 }
