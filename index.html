@@ -5,156 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet">   
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Nanum+Gothic+Coding&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
     <title>CSS Selectors</title>
 </head>
 <body>
-        <div id="navi">
-            <ul>
-                <li><a href="#basic">Basic Selectors</a></li>
-                <li><a href="#grouping">Grouping Selectors</a></li>
-                <li><a href="#combinators">Combinators</a></li>
-                <li><a href="#pseudo">Pseudo-classes</a></li>
-            </ul>
+    <div id="intro">
+        <h1>CSS Selectors</h1>
+        <p>There are many different types of CSS selector that allow you to target rules to specific elements in an HTML document.</p>
+        <p>The table below introduces the most commonly used CSS selectors.</p>
+        <p>CSS selectors are case sensitive, so they must match element names and attribute values exactly.</p>
+    </div>
+    <div id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Selector</th>
+                    <th scope="col">Meaning</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Universal slector</th>
+                    <td>Applies to all element in the document</td>
+                    <td><span class="code">* {} </span><br>Targets all elements on the page</td>
+                </tr>
+                <tr>
+                    <th scope="'row">Type Selector</th>
+                    <td>Matches element names</td>
+                    <td><span class="code">h1, h2, h3 {}</span><br>Targets the h1, h1 and h3 elements</td>
+                </tr>
+                <tr>
+                    <th scope="row">Class Selector</th>
+                    <td> Matches an element whose class attribute has a value that matches the one specified after the period (of full stop) symbol</td>
+                    <td><span class="code">.note {}</span><br>Targets any element whose class attribute has a value of <span class="code">note</span><br><span class="code">p.note {}</span><br>Targets only &ltp&gt elements whose class attribute has a value of <span class="code">note</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">ID selector</th>
+                    <td>Matches an element whose id attribute has a value that matches the one spacified after the hash symbol</td>
+                    <td><span class="code">#introduction {}</span><br>Targets the element hose id attribute has a value of <span class="code">introduction</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Child selector</th>
+                    <td>Matches an element that is a direct child of another</td>
+                    <td><span class="code">li&gta {}</span><br>Targets any &lta&gt elements that are children of an &ltli&gt element (but no grandchildern)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Descendant selector</th>
+                    <td>Matches an element that is a descendent of another specified element (not just a direct child of the element)</td>
+                    <td><span class="code">p a {}</span><br>Targets any &lta&gt elements that sit inside a &ltp&gt element, even if there are other eleemnts nested between them</td>
+                </tr>
+                <tr>
+                    <th scope="row">Adjacent sibling selector</th>
+                    <td>Matches an element that is the next sibling of another</td>
+                    <td><span class="code">h1+p {}</span><br>Targets the first &ltp&gt element after and &lth1&gt element (but not other &ltp&gt eleemnts)</td>
+                </tr>
+                <tr>
+                    <th scope="row">General sibling selector</th>
+                    <td>Matches an element that is a sibling of another, althought it does not have to be the directly preceding element</td>
+                    <td><span class="code">h1~p {}</span><br> If you had two &ltp&gt elements that are siblinga of an &lth1&gt element, this rule will apply to both</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div>
+            <p>Prepared by Simona Ilcheva, webMONIa</p>
         </div>
-        <div class="main">
-            <div class="image">
-                <div id="banner">
-                    <h1>CSS Selectors</h1>
-                    <p><span>CSS selectors</span> define the elements to which a set of CSS rules apply.</p>
-                </div>
-            </div>
-                <div id="basic">
-                    <h2>Basic Selectors</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Type</td>
-                                <td>Syntax</td>
-                                <td>Description</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Universal selector</td>
-                                <td class="syntax">* { style properties }</td>
-                                <td>Selects all elements.</td>
-                            </tr>
-                            <tr>
-                                <td>Type Selector</td>
-                                <td class="syntax">p { style properties }</td>
-                                <td>The CSS <span>type selector</span> matches all elements of the given type within a document.</td>
-                            </tr>
-                            <tr>
-                                <td>Class Selector</td>
-                                <td class="syntax">.class_name { style properties }</td>
-                                <td>The CSS <span>class selector</span> matches elements based on the contents of their class attribute.</td>
-                            </tr>
-                            <tr>
-                                <td>ID Selector</td>
-                                <td class="syntax">#id_value { style properties }</td>
-                                <td>The CSS ID selector matches an element based on the value of the element's id attribute.</td>
-                            </tr>
-                            <tr>
-                                <td>Attribute Selector</td>
-                                <td class="syntax">type [attribute*='value']</td>
-                                <td>The CSS attribute selector matches elements based on the presence or value of a given attribute.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="grouping">
-                    <h2>Grouping Selectors</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Type</td>
-                                <td>Example</td>
-                                <td>Description</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Single Line Grouping</td>
-                                <td class="syntax">h1, h2, h3, h4, h5, h6 { style properties }</td>
-                                <td>Grouping selectors in a single line using a comma-separated lists.</td>
-                            </tr>
-                            <tr>
-                                <td>Mult Line Grouping</td>
-                                <td class="syntax">#main,<br>.content,<br>article {<br> style properties}</td>
-                                <td>Grouping selectors in a multiple lines using a comma-separated lists.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="combinators">
-                    <h2>Combinators</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Type</td>
-                                <td>Syntax</td>
-                                <td>Description</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Descendant combinator</td>
-                                <td class="syntax">parent child { style properties }</td>
-                                <td>The descendant combinator — typically represented by a single space (" ") character — combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector.</td>
-                            </tr>
-                            <tr>
-                                <td>Child combinator</td>
-                                <td class="syntax">parent > child { style properties }</td>
-                                <td>The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first (no grandchildren).</td>
-                            </tr>
-                            <tr>
-                                <td>General sibling combinator</td>
-                                <td class="syntax">former_element ~ target_element { style properties }</td>
-                                <td>The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.</td>
-                            </tr>
-                            <tr>
-                                <td>Adjacent sibling combinator</td>
-                                <td class="syntax">former_element + target_element { style properties }</td>
-                                <td>The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.</td>
-                            </tr>
-                            <tr>
-                                <td>Column combinator</td>
-                                <td class="syntax">column-selector || cell-selector { style properties }</td>
-                                <td>The column combinator (||) is placed between two CSS selectors. It matches only those elements matched by the second selector that belong to the column elements matched by the first.                    </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="pseudo">
-                    <h2>Pseudo-classes</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Type</td>
-                                <td>Syntax</td>
-                                <td>Examples</td>
-                                <td>Description</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pseudo-classes</td>
-                                <td class="syntax">selector:pseudo-class { style properties }</td>
-                                <td>:hoover :focus :visited :disbled :active</td>
-                                <td>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-    </div>
-    <div id="footer">
-        <p>This article was kindly prepared by <span id="name">webMONIa</span>.</p>
-    </div>
-    </body>
+    </footer>
 </body>
 </html>
